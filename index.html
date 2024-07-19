@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-skeleton"></header>
+      <sidebar class="sidebar-skeleton"></sidebar>
+      <main class="main">
+        <div class="list-skeleton-wrapper">
+          <ul class="list-skeleton">
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+          </ul>
+
+          <ul class="list-skeleton">
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+            <li class="list-skeleton__item"></li>
+          </ul>
+        </div>
+        <div class="additional-skeleton"></div>
+
+        <div class="filter">
+          <div class="filter__comment">
+            <span>Комментарии</span>
+            <span class="filter__comment__count">(80)</span>
+          </div>
+
+          <div class="filter__drop">
+            <span class="filter__drop__text">По актуальности</span>
+            <button class="filter__button__list">
+              <img
+                class="filter__btn-img"
+                src="/assets/list-button.svg"
+                alt="triangle icon"
+              />
+            </button>
+            <ul class="filter__drop__list">
+              <li class="filter__drop__item">
+                <button class="filter__drop__btn-date">По дате</button>
+              </li>
+              <li class="filter__drop__item">
+                <button class="filter__drop__btn-rate">
+                  По количеству оценок
+                </button>
+              </li>
+              <li class="filter__drop__item">
+                <button class="filter__drop__btn-response">
+                  По количеству ответов
+                </button>
+              </li>
+              <li class="filter__drop__item">
+                <button class="filter__drop__btn-response">
+                  По актуальности
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter__favorites">
+            <span class="filter__fav__text">Избранное</span>
+            <button class="filter__favorites__btn"></button>
+          </div>
+        </div>
+
+        <form class="input">
+          <img
+            class="input__image"
+            src="/assets/avatar-main.png"
+            alt="Avatar picture"
+          />
+
+          <div class="input-field">
+            <div class="input-field__text">
+              <span class="user-name"></span>
+              <span class="input-field__max">Макс. 1000 символов</span>
+            </div>
+            <input
+              class="input-field__input"
+              placeholder="Введите текст сообщения..."
+            />
+          </div>
+
+          <div class="submit-btn-wrapper">
+            <span class="mistake__text">Слишком длинное сообщение</span>
+            <button type="submit" class="submit-btn" disabled>Отправить</button>
+          </div>
+        </form>
+
+        <ul class="comment"></ul>
+      </main>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
